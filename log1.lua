@@ -569,7 +569,7 @@ wall.ButtonDrawable.setColorFilter(PorterDuffColorFilter(0xFF00FFEE, PorterDuff.
 function wall.OnCheckedChangeListener()
   if wall.checked then
     antiC4droid()
-    HexPatches.MemoryPatch("libunity.so", 0x548A67C, "h1F 20 03 D5")
+    HexPatches.MemoryPatch("libunity.so", 0x548A67C, "h1F 20 03 D5 E0 03 13 AA", 32);
     idkcstmToast("Wallhack Activated")
    else
     HexPatches.MemoryPatch("libunity.so", 0x548A67C, "h80 00 00 36")
