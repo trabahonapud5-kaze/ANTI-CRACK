@@ -578,7 +578,7 @@ redhack.ButtonDrawable.setColorFilter(PorterDuffColorFilter(0xFF00FFEE, PorterDu
 function redhack.OnCheckedChangeListener()
   if redhack.checked then
     antiC4droid()
-    HexPatches.MemoryPatch("libunity.so", 0x8CF23C8, "h20 00 80 D2 C0 03 5F D6"); -- wallhack red
+    HexPatches.MemoryPatch("libunity.so", 0x548A67C, "h1F 20 03 D5 E0 03 13 AA", 32); -- wallhack red
     idkcstmToast("WALLHACK RED ACTIVE!!")
   end
 end
@@ -974,7 +974,7 @@ function autoBypass()
   end)
   
   -- Isang beses na lang lalabas ang Toast na ito
-  showToast("BYPASS ACTIVATED")
+  showToast("BYPASS ACTIVATED1")
 end
 
 -- I-load ang bypass nang hindi binibigla ang main thread sa pagsisimula
